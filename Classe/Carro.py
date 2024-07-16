@@ -11,7 +11,7 @@ class Carro:
             .marca}, de {self.ano}, placa {self.placa}.")
     
     def CordoCarro(self):
-        print(f"Ele é da cor {self.cor}, que é levemente bonita, eu acho...")
+        print(f"Ele é da cor {self.cor}, que é meio bonita, eu acho...")
     
     def CarroGeral(self):
         print(f"Ele é um {self.modelo} da {self.marca}.")
