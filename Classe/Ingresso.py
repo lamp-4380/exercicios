@@ -10,14 +10,13 @@ class Ingresso:
         print(self.preco)
     
 class Ingresso_VIP(Ingresso):
-    def __init__(self, preco, setor):
+    def __init__(self, preco, setor,camarote,open_bar,open_food,estacionamento):
         super().__init__(preco, setor)
-    def __init_subclass__(cls,camarote,open_bar,open_food,estacionamento):
-        cls.cam = camarote
-        cls.bar = open_bar
-        cls.opfood = open_food
-        cls.est = estacionamento
-        return super().__init_subclass__()
+        self.cam = camarote
+        self.bar = open_bar
+        self.opfood = open_food
+        self.est = estacionamento
+
     def pegarBebida(self):
         print("Aqui está")
     

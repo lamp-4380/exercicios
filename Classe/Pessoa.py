@@ -5,7 +5,8 @@ class Pessoa:
         self.idade = i
     
 class Aluno(Pessoa):
-    def __init__(self,notas,media):
+    def __init__(self,mat,nom,i,notas,media):
+        super().__init__(mat,nom,i,notas,media)
         self.notas = notas
         self.media = media
     
@@ -16,7 +17,8 @@ class Aluno(Pessoa):
         print("Porque a questão 11 é sempre a mais difícil...")
 
 class Professor(Pessoa):
-    def __init__(self,formacao,disciplina,carga_horaria,salario):
+    def __init__(self,mat,nom,i,formacao,disciplina,carga_horaria,salario):
+        super().__init__(mat,nom,i,formacao,disciplina,carga_horaria,salario)
         self.form = formacao
         self.dis = disciplina
         self.ch = carga_horaria

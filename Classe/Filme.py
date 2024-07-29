@@ -7,23 +7,20 @@ class Filme:
         print("Iniciando filme...")
     
 class Ação(Filme):
-    def __init__(self, nome, duracao):
+    def __init__(self, nome, duracao,poderes,vilão):
         super().__init__(nome, duracao)
-    def __init_subclass__(cls,poderes,vilão):
-        cls.poderes = poderes
-        cls.vilão = vilão
-        return super().__init_subclass__()
+        
+        self.poderes = poderes
+        self.vilão = vilão
     
     def Explodir(self):
         print("BOOOM")
 
 class Terror(Filme):
-    def __init__(self, nome, duracao):
-        super().__init__(nome, duracao)
-    def __init_subclass__(cls,personagens,monstro):
-        cls.per = personagens
-        cls.monstro = monstro
-        return super().__init_subclass__()
+    def __init__(self, nome, duracao,personagens,monstro):
+        super().__init__(nome, duracao,)
+        self.per = personagens
+        self.monstro = monstro
     
     def Aparicao(self):
         print("AAAAHHHHH")

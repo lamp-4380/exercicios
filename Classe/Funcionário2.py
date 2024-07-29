@@ -11,21 +11,17 @@ class Funcionario:
             self.ponto = False
 
 class Vendedor(Funcionario):
-    def __init__(self, nome, mat, sal):
+    def __init__(self, nome, mat, sal, comm):
         super().__init__(nome, mat, sal)
-    
-    def __init_subclass__(cls,comm):
-        cls.comm_val = comm
+        self.comm_val = comm
 
-        return super().__init_subclass__()
-    def Bater_meta(cls,meta):
-        print(f"Você até agora conseguiu {cls.comm_val}/{meta}!")
+    def Bater_meta(self,meta):
+        print(f"Você até agora conseguiu {self.comm_val}/{meta}!")
 
 class Gerente(Funcionario):
-    def __init__(self, nome, mat, sal):
+    def __init__(self, nome, mat, sal, senha):
         super().__init__(nome, mat, sal)
-    def __init_subclass__(cls,senha):
-        cls.senha = senha
-        return super().__init_subclass__()
-    def Gerenciar(cls):
+        self.senha = senha
+
+    def Gerenciar(self):
         print("Gerenciado.")

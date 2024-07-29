@@ -10,25 +10,19 @@ class Passagem:
         self.assento = na
 
 class PassagemBus(Passagem):
-    def __init__(self, preço, assento):
+    def __init__(self, preço, assento,placa,leito):
         super().__init__(preço, assento)
-    
-    def __init_subclass__(cls,placa,leito):
-        cls.placa = placa
-        cls.leito = leito
-        return super().__init_subclass__()
+        self.placa = placa
+        self.leito = leito
     
     def Abastecer(self):
         print("Abastecendo")
 
 class PassagemAviao(Passagem):
-    def __init__(self, preço, assento):
+    def __init__(self, preço, assento,portemb,checkin):
         super().__init__(preço, assento)
-    
-    def __init_subclass__(cls,portemb,checkin) -> None:
-        cls.portemb = portemb
-        cls.checkin = checkin
-        return super().__init_subclass__()
+        self.portemb = portemb
+        self.checkin = checkin
     
     def decolar(self):
         print("Decolando!")
