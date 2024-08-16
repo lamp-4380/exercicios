@@ -1,5 +1,46 @@
-p,
-li,
-h1 {
-    color: crimson;
+
+.moderustic-texto {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
+html {
+    font-size: 10px;
+    font-family: "Moderustic", sans-serif;
+    background-color: rgb(84, 84, 84);
+}
+h1 {
+    font-size: 30px;
+    text-align:left;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 1px 1px 1px black;
+}
+h5 {
+    font-size: 20px;
+    text-align:left;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+}
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: white;
+}
+body{
+    width: 1700px;
+    margin: 0 auto;
+    background-color: rgb(52, 52, 52);
+    padding: 0 20px 20px 20px;
+    border: 0 solid black;
+}
+img {
+    display: block;
+    margin: 0 1100px;
+    width: 400px;
+  }
